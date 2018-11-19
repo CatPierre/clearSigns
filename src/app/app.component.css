@@ -1,0 +1,219 @@
+/* body {
+    background: #2f313d;
+    color: #46485c;
+    font-family: sans-serif;
+}
+
+.form
+{
+    font-family: cursive;
+    color: white;
+    font-weight: lighter;
+    font-size: 5mm;
+    margin-top: 25vw;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    border: 3px;
+}
+.login {
+    background-color: #2F4F4F;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.5;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+.login:hover {opacity: 1}
+.register {
+    background-color: none;
+    border:  #2F4F4F;
+    color:  #2F4F4F;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+.register:hover {opacity: 1}
+div
+{
+    font-family: cursive;
+    color: white;
+    font-weight: lighter;
+    font-size: 5mm;
+}
+.box
+{
+    border-radius: 5px;
+    padding: 20px;
+    height: auto;
+}
+.input
+{
+    border-radius: 2px;
+    border-width: 0px;
+    margin-left: 10px;
+    background-color: #D3D3D3;
+}
+label
+{
+    vertical-align: top;
+    margin-right: 5px;
+} */
+/*
+  SOURCES:
+  http://jasonwatmore.com/post/2018/05/16/angular-6-user-registration-and-login-example-tutorial#login-component-html
+  https://angular.io/tutorial/toh-pt3
+  https://speckyboy.com/login-pages-html5-css/
+*/
+.form
+{
+    margin-top: 5vw;
+    margin-right: 50vw;
+    margin-left: 50vw;
+    border: 3px;
+}
+ body {
+  background: #2f313d;
+  color: #46485c;
+  font-family: sans-serif;
+}
+
+h2 {
+  padding-top: 40px;
+  color: #C0C0C0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 23px;
+}
+
+a {
+  color: #46485c;
+  text-decoration: none;
+}
+
+.login {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -184px 0px 0px -155px;
+  background: rgba(0,0,0,0.2);
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07)
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%; 
+    margin-bottom: 10px; 
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+input[type=checkbox] {
+  display: none;
+}
+
+label {
+  display: block;
+  position: absolute;
+  margin-top: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #46485c;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 3px solid #252730;
+  box-shadow: 0px 0px 0px 2px #46485c;
+}
+
+#remember:checked ~ label[for=remember] {
+  background: #C0C0C0;
+  border: 3px solid #252730;
+  box-shadow: 0px 0px 0px 2px #708090;
+}
+
+
+input[type="submit"] {
+  background:#2F4F4F;
+  border: 0;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background:#708090;
+}
+
+.forgot {
+  margin-top: 15px;
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+  color: #DCDCDC;
+}
+.forgot:hover {
+  margin-top: 15px;
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+  color: #778899;
+}
+
+.register {
+  margin-top: 15px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  color: #DCDCDC;
+}
+.register:hover {
+  margin-top: 15px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #708090;
+}
+
+.remember {
+  padding: 30px 0px;
+  font-size: 12px;
+  text-indent: 25px;
+  line-height: 15px;
+  -webkit-text-fill-color: white;
+}
+
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: all 0.2s linear;
+  transform: translate(10px, 0);
+  opacity: 0;
+}
